@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - CRToast (0.0.9)
+  - GDPerformanceView-Swift (1.2.0)
+  - IQKeyboardManager (4.0.11)
+  - SwiftLint (0.20.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - AlamofireImage (~> 3.1)
+  - CRToast (~> 0.0.9)
+  - GDPerformanceView-Swift (~> 1.2.0)
+  - IQKeyboardManager
+  - SwiftLint
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
+  GDPerformanceView-Swift: 5f12f13dcdca4cb87f91ef91ba6b50981421c57f
+  IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
+  SwiftLint: f60095dc173a3f3ec505bb34f5229c3dfd779a54
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 3456c6d44cc0f97f3d0751b949483e73315bf37b
+
+COCOAPODS: 1.2.1
