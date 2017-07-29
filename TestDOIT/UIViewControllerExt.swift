@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UIViewControllerExt.swift
 //  TestDOIT
 //
 //  Created by Dima Gubatenko on 28.07.17.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+extension UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func closeKeyboard() {
+        view.endEditing(true)
     }
 }

@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import IQKeyboardManager
+#if DEBUG
+    import GDPerformanceView_Swift
+#endif
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +19,21 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // init keyboard manager
+        IQKeyboardManager.shared().isEnabled = true
+        IQKeyboardManager.shared().isEnableAutoToolbar = false
+        // set start controller
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = Storyboards.loginRegister
+        window?.makeKeyAndVisible()
+        // init perfomance view
+        #if DEBUG
+            if window != nil {
+                GDPerformanceMonitor.sharedInstance.appVersionHidden = true
+                GDPerformanceMonitor.sharedInstance.deviceVersionHidden = true
+                GDPerformanceMonitor.sharedInstance.startMonitoring()
+            }
+        #endif
         return true
     }
 
